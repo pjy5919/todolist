@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>todolsit</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/stlye.css">
+</head>
+<body>
+<div class="weathers">
+  <div id="date"></div>
+  <div class="timer">
+      <div class="time hour">00</div>
+      <div class="divider">:</div>
+      <div class="time min">00</div>
+  </div>
+  <div class="noti">
+    위치 정보를 가져올 수 없습니다.<br>
+    위치 설정을 확인해주세요.
+  </div>
+  <div class="container">
+    <div class="current-weather">
+      <img class="icon" alt="">
+      <!-- 날씨를 가져오면서 자동으로 나오게함 -->
+ 
+      <div class="weather">현재 날씨</div>
+      <div class="temp">현재온도</div>
+      <div class="info">
+     
+        <div class="city">현재 위치</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="todolist">
+  <h2>to do list</h2>
+  <form>
+    <input type="text" placeholder="오늘의 할일을 작성하시오.">
+    <button>등록</button>
+  </form>
+  <ul>
+
+  </ul>
+  <div id="toto_footer">
+    <span class="todotext">오늘 할 일이 <span class="todo-count"></span>개 남았습니다.</span>
+    <button class="clear-all">전체삭제</button>
+  </div>
+</div>
+<script type="module" src="js/index.js"></script>
+<script src="js/jquery-3.7.0.min.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+</body>
+</html>
